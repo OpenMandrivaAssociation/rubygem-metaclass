@@ -5,7 +5,7 @@ Summary:	Adds a metaclass method to all Ruby objects
 Name:		rubygem-%{rbname}
 
 Version:	0.0.1
-Release:	1
+Release:	3
 Group:		Development/Ruby
 License:	GPLv2+ or Ruby
 URL:		http://github.com/floehopper/metaclass
@@ -34,22 +34,17 @@ Documents, RDoc & RI documentation for %{name}.
 %gem_install
 
 %files
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*.rb
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/metaclass
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/metaclass/*.rb
-%{ruby_gemdir}/specifications/%{rbname}-%{version}.gemspec
+%dir %{gem_dir}/gems/%{rbname}-%{version}
+%dir %{gem_dir}/gems/%{rbname}-%{version}/lib
+%{gem_dir}/gems/%{rbname}-%{version}/lib/*.rb
+%dir %{gem_dir}/gems/%{rbname}-%{version}/lib/metaclass
+%{gem_dir}/gems/%{rbname}-%{version}/lib/metaclass/*.rb
+%{gem_dir}/specifications/%{rbname}-%{version}.gemspec
 
 %files doc
-%{ruby_gemdir}/doc/%{rbname}-%{version}
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/test
-%{ruby_gemdir}/gems/%{rbname}-%{version}/test/*.rb
+%{gem_dir}/doc/%{rbname}-%{version}
+%dir %{gem_dir}/gems/%{rbname}-%{version}/test
+%{gem_dir}/gems/%{rbname}-%{version}/test/*.rb
 
 
-
-%changelog
-* Fri Mar 09 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.0.1-1
-+ Revision: 783583
-- imported package rubygem-metaclass
 
