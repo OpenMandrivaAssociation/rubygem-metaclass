@@ -8,7 +8,7 @@ Version:	0.0.1
 Release:	4
 Group:		Development/Ruby
 License:	GPLv2+ or Ruby
-URL:		http://github.com/floehopper/metaclass
+URL:		https://github.com/floehopper/metaclass
 Source0:	http://rubygems.org/gems/%{rbname}-%{version}.gem
 BuildRequires:	rubygems 
 BuildArch:	noarch
